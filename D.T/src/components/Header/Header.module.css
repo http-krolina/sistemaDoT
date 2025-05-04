@@ -8,7 +8,7 @@
       #222 40%,
       transparent 40%
     ),
-    /* Cor do restante (opcional) */ #c4c9cd;
+    /* Cor do restante */ #c4c9cd;
   display: flex;
   align-items: center; /* Centraliza verticalmente */
 }
