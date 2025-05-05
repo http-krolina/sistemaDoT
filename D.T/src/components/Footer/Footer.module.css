@@ -1,10 +1,5 @@
 .footer {
-  background: linear-gradient(
-    to bottom,
-    #a4a2a2 100%,
-    transparent 20%,
-    #3e3d3d 100%
-  );
+  background: linear-gradient(to bottom, #a4a2a2 100%, transparent 20%);
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 1rem;
