@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #c4c9cd 0%, #c4c9cd 85%, #a4a2a2 94%);
+  background: linear-gradient(to bottom, #a4a2a2 100%, transparent 20%);
 }
 .mainContent {
   flex: 1; /* Isso empurra o footer para baixo */
