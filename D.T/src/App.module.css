@@ -1,10 +1,148 @@
 /* src/App.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 .appContainer {
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/wallpaper2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Inter", sans-serif;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  background: linear-gradient(to bottom, #a4a2a2 100%, transparent 20%);
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 7.5rem;
+  padding-bottom: 1.25rem;
 }
-.mainContent {
-  flex: 1; /* Isso empurra o footer para baixo */
+
+.loginContainer {
+  background: #171717;
+  border-radius: 2.1875rem;
+  margin-top: 4.375rem;
+  padding: 1.875rem 1.5625rem;
+  width: 36rem;
+  min-height: 40.625rem;
+  box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1.25rem;
+  font-size: 1.8rem;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  color: #fff;
+}
+
+.formGroup {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 70px;
+  border: 2px solid #222;
+  background: #fff;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.toggleVisibility {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+}
+
+.forgotPassword {
+  display: block;
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.button {
+  width: 100%;
+  max-width: 19.625rem;
+  height: 3.125rem;
+  border-radius: 3.125rem 0.625rem;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.5rem auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primaryButton {
+  background: #b2eb00;
+  color: #040301;
+  border: 3px solid #fff;
+}
+
+.secondaryButton {
+  background: #fff;
+  color: #000;
+  border: 3px solid #b2eb00;
+}
+
+.divider {
+  margin: 1.25rem auto;
+  border: none;
+  border-top: 1px solid #999;
+  width: 80%;
+}
+
+.welcomeText {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .appContainer {
+    justify-content: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .loginContainer {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+
+  .button {
+    max-width: 100%;
+  }
 }
