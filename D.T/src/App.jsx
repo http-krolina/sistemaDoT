@@ -37,7 +37,7 @@ function App() {
               className={styles.toggleVisibility}
               onClick={() => setShowPassword(!showPassword)}
             >
-              {showPassword ? "🙈" : "👁️"}
+              {showPassword ? "👁" : "👁"}
             </span>
           </div>
         </div>
