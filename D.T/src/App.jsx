@@ -1,20 +1,17 @@
 // src/App.jsx
-import { useState } from "react";
-import styles from "./App.module.css";
 import Fundo from "./assets/Fundo.png";
-import Login from "./components/Login"; // Verifique se o caminho está correto
+import Login from "./components/Login";
+import styles from "./App.module.css"; // Importando o CSS
 
 function App() {
-  const [showPassword, setShowPassword] = useState(false);
-
   return (
     <div
-      className={styles.appContainer} // Correto: usando className com CSS Modules
+      className={styles.appContainer} // Adicionando a classe CSS
       style={{
         backgroundImage: `url(${Fundo})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "100vh",
+        minHeight: "100vh", // Corrigido de "mineLight" para "minHeight"
         display: "flex",
         justifyContent: "flex-end",
         alignItems: "center",
