@@ -5,13 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 .appContainer {
-  margin: 0;
-  padding: 0;
-  background-image: url("../assets/wallpaper2.png.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   font-family: "Inter", sans-serif;
   min-height: 100vh;
   display: flex;
@@ -44,6 +37,8 @@
 .formGroup {
   margin-top: 2rem;
   text-align: left;
+  width: 32.125rem; /* 514px */
+  max-width: 100%;
 }
 
 .label {
@@ -160,4 +155,17 @@
 .eyeIcon {
   width: 20px;
   height: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(13, 13, 13, 0.2);
+  color: #040301;
+  text-align: center;
+  padding: 0.9375rem 0; /* 15px */
+  font-size: 1rem;
+  box-shadow: 0 -0.125rem 0.3125rem rgba(0, 0, 0, 0.3);
 }
