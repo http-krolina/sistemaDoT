@@ -146,3 +146,18 @@
     max-width: 100%;
   }
 }
+
+.toggleVisibility {
+  cursor: pointer;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.toggleVisibility:hover {
+  color: #333;
+}
+
+.eyeIcon {
+  width: 20px;
+  height: 20px;
+}
