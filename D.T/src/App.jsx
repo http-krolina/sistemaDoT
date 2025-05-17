@@ -1,7 +1,10 @@
 // src/App.jsx
+import { useState } from "react";
 import styles from "./App.module.css";
 
 function App() {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <div className={styles.appContainer}>
       <div className={styles.loginContainer}>
@@ -25,12 +28,17 @@ function App() {
           </label>
           <div className={styles.passwordContainer}>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               id="password"
               className={styles.inputField}
               placeholder="Digite a sua senha"
             />
-            <span className={styles.toggleVisibility}>##</span>
+            <span
+              className={styles.toggleVisibility}
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? "🙈" : "👁️"}
+            </span>
           </div>
         </div>
 
