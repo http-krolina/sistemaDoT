@@ -158,8 +158,8 @@
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  margin-top: 58.9rem;
   right: 0;
   width: 100%;
   background-color: rgba(13, 13, 13, 0.2);
