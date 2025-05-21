@@ -173,3 +173,15 @@ footer {
   align-items: center;
   text-align: center;
 }
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

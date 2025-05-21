@@ -90,7 +90,7 @@ function Login() {
           Se esse é o seu primeiro acesso, seja bem-vinde!
         </p>
         <button className={`${styles.button} ${styles.secondaryButton}`}>
-          <Link to="/Cadastro" className="btn criar">
+          <Link to="/Cadastro" className={styles.link}>
             CRIAR CONTA
           </Link>
         </button>
