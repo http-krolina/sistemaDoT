@@ -164,8 +164,10 @@
   width: 100%;
   background-color: rgba(13, 13, 13, 0.2);
   color: #040301;
-  text-align: center;
+
   padding: 0.9375rem 0; /* 15px */
-  font-size: 1rem;
+
   box-shadow: 0 -0.125rem 0.3125rem rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  text-align: center;
 }

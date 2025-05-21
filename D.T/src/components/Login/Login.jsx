@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./Login.module.css";
 
 function Login() {
-  // Adicione os parênteses
   const [showPassword, setShowPassword] = useState(false);
 
   return (
