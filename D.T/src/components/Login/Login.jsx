@@ -1,11 +1,24 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import styles from "./Login.module.css";
+import Fundo from "../../assets/Fundo.png";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className={styles.appContainer}>
+    <div
+      className={styles.appContainerLogin} // Adicionando a classe CSS
+      style={{
+        backgroundImage: `url(${Fundo})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        minHeight: "100vh", // Definindo a altura mínima da tela
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "center",
+      }}
+    >
       <div className={styles.loginContainer}>
         <h2 className={styles.title}>FAÇA LOGIN</h2>
 
@@ -77,7 +90,9 @@ function Login() {
           Se esse é o seu primeiro acesso, seja bem-vinde!
         </p>
         <button className={`${styles.button} ${styles.secondaryButton}`}>
-          CRIAR CONTA
+          <Link to="/Cadastro" className="btn criar">
+            CRIAR CONTA
+          </Link>
         </button>
       </div>
 
