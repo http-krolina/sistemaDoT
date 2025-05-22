@@ -139,7 +139,7 @@ const Cadastro = () => {
       </div>
 
       <footer className={styles.footercadastro}>
-        <p>Arteiros ©️ 2025</p>
+        <p>Arteiros © 2025</p>
       </footer>
     </div>
   );
