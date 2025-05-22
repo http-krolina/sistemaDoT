@@ -178,7 +178,7 @@ footer {
 }
 
 .link {
-  text-decoration: none;
+  text-decoration: none; /* Remove sublinhado */
   display: inline-block;
 
   color: #000;
