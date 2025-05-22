@@ -53,7 +53,7 @@ const Cadastro = () => {
 
             <div className={styles.formgroup}>
               <label htmlFor="nome-social">
-                Nome social: <span className="opcional">Opcional</span>
+                Nome social: <span className={styles.opcional}>(Opcional)</span>
               </label>
               <input
                 type="text"

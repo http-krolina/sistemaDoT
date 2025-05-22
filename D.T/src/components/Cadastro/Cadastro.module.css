@@ -5,9 +5,6 @@
   font-family: Inter, sans-serif;
 }
 
-html {
-}
-
 .cadastropage {
   background-color: #363d4d;
   color: white;
@@ -125,10 +122,11 @@ form {
   gap: 0.5rem;
   color: white;
   font-size: 0.95rem;
+  font-family: "Century Gothic" sans-serif;
 }
 
 .checkboxcontainer label {
-  font-family: "century Gothic";
+  font-family: "Century Gothic" sans-serif;
   font-size: 1rem; /* 24px */
   font-style: normal;
   font-weight: 400;
@@ -181,7 +179,7 @@ footer p {
   color: #fff;
   font-family: "Century Gothic" sans-serif;
   font-size: 20px;
-  font-style: normal;
+  font-style: "regular";
   font-weight: 400;
   line-height: normal;
 }

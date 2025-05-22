@@ -17,6 +17,8 @@
   background: #171717;
   border-radius: 2.1875rem;
   margin-top: 4.375rem;
+  margin-right: auto; /* empurra para a esquerda */
+  margin-left: 68rem; /* também empurra para a esquerda */
   padding: 1.875rem 1.5625rem;
   width: 36rem;
   min-height: 40.625rem;
@@ -171,6 +173,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Century Gothic" sans-serif;
   text-align: center;
 }
 
