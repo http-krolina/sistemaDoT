@@ -1,22 +1,19 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import styles from "./Login.module.css";
-import Fundo from "../../assets/Fundo.png";
+import Fundo from "../../assets/Fundo.png"; // Ajuste o caminho conforme necessário
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div
-      className={styles.appContainerLogin} // Adicionando a classe CSS
+      className={styles.appContainerLogin}
       style={{
         backgroundImage: `url(${Fundo})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "100vh", // Definindo a altura mínima da tela
-        display: "flex",
-        justifyContent: "flex-end",
-        alignItems: "center",
+        height: "100vh",
       }}
     >
       <div className={styles.loginContainer}>
@@ -76,24 +73,28 @@ function Login() {
           </div>
         </div>
 
-        <a href="#" className={styles.forgotPassword}>
+        <Link to="/recuperar-senha" className={styles.forgotPassword}>
           Esqueceu a senha?
-        </a>
+        </Link>
 
-        <button className={`${styles.button} ${styles.primaryButton}`}>
-          ENTRAR
-        </button>
+        <Link
+          to="/pagina-inicial"
+          className={`${styles.button} ${styles.primaryButton}`}
+        >
+          <p className={styles.entrarCriar}>ENTRAR</p>
+        </Link>
 
         <div className={styles.divider} />
 
         <p className={styles.welcomeText}>
           Se esse é o seu primeiro acesso, seja bem-vinde!
         </p>
-        <button className={`${styles.button} ${styles.secondaryButton}`}>
-          <Link to="/Cadastro" className={styles.link}>
-            CRIAR CONTA
-          </Link>
-        </button>
+        <Link
+          to="/cadastro"
+          className={`${styles.button} ${styles.secondaryButton}`}
+        >
+          <p className={styles.entrarCriar}>CRIAR CONTA</p>
+        </Link>
       </div>
 
       <footer className={styles.footer}>Arteiros © 2025</footer>

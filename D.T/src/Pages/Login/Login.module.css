@@ -4,6 +4,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 .appContainerLogin {
+  background-image: url("../../assets/Fundo.png");
+  background-size: "cover";
+  background-position: "center";
+  min-height: "100vh";
+  display: "flex";
+  justify-content: "flex-end";
+  align-items: "center";
+
   font-family: "Inter", sans-serif;
   min-height: 100vh;
   display: flex;
@@ -102,12 +110,30 @@
   background: #b2eb00;
   color: #040301;
   border: 3px solid #fff;
+
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-block;
 }
 
 .secondaryButton {
   background: #fff;
   color: #000;
   border: 3px solid #b2eb00;
+
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-block;
+}
+
+.entrarCriar {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  text-align: center;
+  margin-top: 0.7rem;
 }
 
 .divider {
@@ -175,16 +201,4 @@ footer {
   align-items: center;
   font-family: "Century Gothic" sans-serif;
   text-align: center;
-}
-
-.link {
-  text-decoration: none; /* Remove sublinhado */
-  display: inline-block;
-
-  color: #000;
-  font-family: "Open Sans";
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }

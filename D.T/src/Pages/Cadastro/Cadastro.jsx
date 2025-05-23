@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../../assets/LOGO1.png"; // Ajuste o caminho conforme necessário
 import styles from "./Cadastro.module.css"; // Importe o CSS
 
