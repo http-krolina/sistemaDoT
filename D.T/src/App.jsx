@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className={styles.appContainerApp}>
         <Routes>
-          <Route path="Login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/pagina-inicial" element={<PaginaInicial />} />
         </Routes>
