@@ -27,6 +27,7 @@
   height: 15.25rem;
   margin-top: 10rem;
   margin-left: center;
+
   position: center;
   flex-shrink: 0;
 }
@@ -35,6 +36,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-left: center;
   align-items: center;
   padding: 2rem;
   margin-bottom: 0.2125rem;
