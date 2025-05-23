@@ -13,7 +13,6 @@ function Login() {
         backgroundImage: `url(${Fundo})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "100vh",
       }}
     >
       <div className={styles.loginContainer}>

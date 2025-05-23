@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../../assets/LOGO1.png"; // Ajuste o caminho conforme necessário
 import styles from "./Cadastro.module.css"; // Importe o CSS
+import { Footer } from "../../components/Footer/Footer";
 
 const Cadastro = () => {
   const [formData, setFormData] = useState({
@@ -138,9 +139,7 @@ const Cadastro = () => {
         </div>
       </div>
 
-      <footer className={styles.footercadastro}>
-        <p>Arteiros © 2025</p>
-      </footer>
+      <Footer />
     </div>
   );
 };
