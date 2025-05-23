@@ -1,4 +1,4 @@
-.containerPagInicial {
+.containerAbono {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #363d4d;
@@ -17,6 +17,11 @@
 
 .logo {
   height: 30px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
 }
 
 .menuInicial {
@@ -86,32 +91,25 @@
 }
 
 .conteudo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #363d4d;
+  background-color: #f0f0f0;
   padding: 30px;
   flex: 1;
 }
 
 .perfil {
   display: flex;
+  background-color: #bfbfbf;
+  border-radius: 20px;
   padding: 20px;
-  width: 1920px;
-  height: 294px;
-  margin-left: -30px;
-
-  background-color: #171717;
-
   margin-bottom: 30px;
   align-items: center;
 }
 
 .foto {
-  width: 200px;
-  height: 200px;
-  border-radius: 25px;
-  background: rgba(217, 217, 217, 0.75);
+  width: 120px;
+  height: 150px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,37 +118,24 @@
 }
 
 .dados h2 {
-  display: absolute;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente (opcional) */
-  margin-left: 38rem;
-
+  margin: 0;
   font-size: 1.4em;
-  color: #ffffff;
+  color: #333;
 }
 
 .dados p {
-  display: absolute;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente (opcional) */
-
-  margin-left: 38rem;
-  color: #ffffff;
+  margin: 5px 0;
+  color: #333;
 }
 
 .registro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 62.75rem; /* 1004px */
-  height: 34.375rem; /* 550px */
-
-  border: 1px solid #fff;
-
-  background: rgba(255, 255, 255, 0.15);
-
-  box-shadow: -40px 40px 50px 3px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(35px);
+  background-color: #3f3f3f;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .registro h3 {
@@ -170,24 +155,31 @@
 
 .botoesRegistro {
   display: flex;
-  width: 314px;
-  height: 94px;
-  padding: 11px 119px;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   gap: 10px;
-  flex-shrink: 0;
 }
 
 .entrada,
-.saida,
-.pausa,
-.voltaP {
-  padding: 10px 30px; /* Aumentei o padding horizontal */
-  background: #171717;
-  border: 3px solid #fff;
+.saida {
+  width: 48%;
+  padding: 10px 0;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 
-  color: #fff;
+.entrada {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.saida {
+  background-color: white;
+  color: black;
 }
 
 .footer {
