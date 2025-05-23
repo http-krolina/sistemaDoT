@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+.cadastropage {
+  background-color: #363d4d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.543rem;
+}
+
+.logo {
+  width: 16rem;
+  height: 15.25rem;
+  margin-top: 10rem;
+  margin-left: center;
+  position: center;
+  flex-shrink: 0;
+}
+
+.containercadastro {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 0.2125rem;
+}
+
+.formcard {
+  background-color: #171717;
+  border: 0.063rem solid #fff;
+  border-radius: 2.1875rem; /* 35px */
+  box-shadow: -40px 40px 50px 3px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.1875rem); /* 35px */
+  padding: 3rem;
+  margin-top: 0.5rem;
+  max-width: 56.25rem; /* 900px */
+  width: 62.75rem;
+  height: 45.5rem;
+  flex-shrink: 0;
+  backdrop-filter: blur(2.1875rem); /* 35px */
+}
+
+h1 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.875rem; /* 30px */
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formgroup {
+  display: flex;
+  flex-direction: column;
+  flex: 0.1rem;
+  color: #fff;
+}
+
+.formgroup label {
+  font-size: 1rem; /* 20px */
+  font-family: "inter";
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.formgroup input {
+  padding: 0.75rem 1rem;
+  border-radius: 2.1875rem; /* 35px */
+  border: 0.125rem solid #222222;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+  background-color: #fff;
+}
+
+.formrow {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.formcontainer {
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.checkboxcontainer {
+  position: absolute;
+  bottom: 10rem;
+  left: 18rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-size: 0.95rem;
+  font-family: "Century Gothic" sans-serif;
+}
+
+.checkboxcontainer label {
+  font-family: "Century Gothic" sans-serif;
+  font-size: 1rem; /* 24px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.opcional {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.buttoncadastro {
+  align-self: center;
+  background-color: #b2eb00;
+  color: #040301;
+  width: 19.625rem;
+  height: 3.125rem;
+  font-size: 1.25rem; /* 20px */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 0.6875rem 7.4375rem;
+  border: 1px solid #fff;
+  gap: 0.625rem;
+  margin-top: 6rem;
+  border-radius: 3.125rem 0.625rem;
+  outline: 0.1875rem solid white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #b2eb00;
+}
