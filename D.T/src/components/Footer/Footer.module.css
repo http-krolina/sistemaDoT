@@ -8,13 +8,28 @@
   background: #171717;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(35px);
+
+  /* NOVAS PROPRIEDADES PARA CONTROLAR A VISIBILIDADE */
+  position: fixed; /* Mantenha-o fixo na parte inferior da tela */
+  bottom: 0; /* Alinha-o na parte inferior */
+  left: 0; /* Garante que ele comece no lado esquerdo */
+  opacity: 0; /* Começa totalmente transparente */
+  visibility: hidden; /* Garante que ele não seja clicável/interativo quando invisível */
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Transição suave */
+  z-index: 1000; /* Garante que ele apareça sobre outros elementos */
+}
+
+/* Classe para quando o footer deve estar visível */
+.footer.visible {
+  opacity: 1; /* Torna-o visível */
+  visibility: visible; /* Torna-o interativo */
 }
 
 footer p {
   color: #fff;
-  font-family: "Century Gothic" sans-serif;
+  font-family: "Century Gothic" sans-serif; /* Considere 'Century Gothic', sans-serif para compatibilidade */
   font-size: 20px;
-  font-style: "regular";
+  font-style: normal; /* "regular" não é um valor CSS válido para font-style */
   font-weight: 400;
   line-height: normal;
 }
