@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./Relatorio.module.css";
 import Logo from "../../assets/LOGO1.png"; // Ajuste o caminho conforme necessário
 import { Footer } from "../../components/Footer/Footer";
+import TabelaMes from "../../components/TabelaMes/TabelaMes";
 
 const Relatorio = () => {
   return (
@@ -26,6 +27,27 @@ const Relatorio = () => {
           </Link>
         </nav>
       </header>
+
+      <div className={styles.relatorio}>
+        <table className={styles.tabela}>
+          <tbody>
+            <tr>
+              <td>Faltas</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Horas extras</td>
+              <td>20h</td>
+            </tr>
+          </tbody>
+        </table>
+        <div className={styles.divisor}>
+          <hr></hr>
+        </div>
+      </div>
+      <div className={styles.tabelaMes}>
+        <TabelaMes />
+      </div>
 
       <Footer />
     </div>

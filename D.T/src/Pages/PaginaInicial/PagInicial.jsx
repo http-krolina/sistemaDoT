@@ -29,7 +29,9 @@ const PaginaInicial = () => {
 
       <div className={styles.conteudo}>
         <div className={styles.perfil}>
-          <div className={styles.foto}>FOTO</div>
+          <div className={styles.foto}>
+            <p>FOTO</p>
+          </div>
           <div className={styles.dados}>
             <h2>ÍTALO FERREIRA COSTA</h2>
 

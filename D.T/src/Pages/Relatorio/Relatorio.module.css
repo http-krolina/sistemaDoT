@@ -212,3 +212,37 @@
     width: 100%;
   }
 }
+
+.relatorio {
+  width: 509px;
+  height: 127px;
+  flex-shrink: 0;
+
+  padding: 6rem 6rem;
+}
+
+.tabela {
+  border-collapse: collapse;
+
+  background: rgba(23, 23, 23, 0.5);
+  color: white;
+  font-size: 20px;
+  border-radius: 1px solid #fff;
+  overflow: hidden;
+  min-width: 250px;
+}
+
+.tabela td {
+  border: 1px solid white;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+.divisor {
+  width: 120rem;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+  margin-left: -6rem;
+}
