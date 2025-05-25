@@ -13,7 +13,7 @@ const TabelaPontoDetalhada = () => {
         </div>
         <p className={styles.cardPontoTitle}>CARTÃO DE PONTO</p>
         <p className={styles.cardPontoInfo}>
-          Empresa: XXXX Ltda (XXXX-XX-XX), Endereço: Rua do teste, 101, Recife - PE
+          Empresa: XXXX Ltda (XXXX-XX-XX), Endereço: Rua teste, 101, Recife - PE
         </p>
         <p className={styles.cardPontoInfo}>
           Registro: XXXX (XXXX-XX-XX), NOME: XXXXX, CPF: XXX.XXX.XXX-XX, RG: XXXXXXX
