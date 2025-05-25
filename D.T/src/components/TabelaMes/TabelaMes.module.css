@@ -8,8 +8,8 @@
 .tabelaMes {
   /* Modificações para o visual "Mês | MAIO" */
   border-radius: 10px; /* Bordas arredondadas para toda a tabela */
-  border: 1px solid #FFF;
-  background: rgba(23, 23, 23, 0.50); /* Cor de fundo escura, similar à imagem */
+  border: 1px solid #fff;
+  background: rgba(23, 23, 23, 0.5); /* Cor de fundo escura, similar à imagem */
   width: 650px; /* Mantém a largura fixa como você solicitou */
   /* height: 20px; Removido para que a altura seja definida pelo conteúdo e padding */
   flex-shrink: 0;
@@ -44,13 +44,8 @@
   color: #fff;
   text-align: center;
   font-family: "Open Sans";
-<<<<<<< HEAD
-  font-size: 1.5rem;
-  font-style: bold;
-=======
   font-size: 1.5rem; /* Ajustado para ficar mais próximo da imagem */
   font-style: normal;
->>>>>>> 59f573f17eac1278a645824f5548cb1cfd2229d8
   font-weight: 300;
   line-height: normal;
   padding: 10px 20px; /* Padding para dar espaço ao texto */
@@ -104,24 +99,23 @@
 }
 
 .okButton {
- display: inline-block;
-width: 10.8125rem;
-height: 3.125rem;
-padding: 0.6875rem 7.4375rem;
-justify-content: center;
-align-items: center;
-gap: 0.625rem;
-flex-shrink: 0;
-border-radius: 3.125rem 0.625rem;
-border: 3px solid #FFF;
-background: #B2EB00;
-color: #040301;
-font-family: "Open Sans";
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-
+  display: inline-block;
+  width: 10.8125rem;
+  height: 3.125rem;
+  padding: 0.6875rem 7.4375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  border-radius: 3.125rem 0.625rem;
+  border: 3px solid #fff;
+  background: #b2eb00;
+  color: #040301;
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .okButton:hover {
@@ -138,7 +132,8 @@ line-height: normal;
   .tabelaMes {
     width: 100%; /* Permite que a tabela se adapte em telas menores */
   }
-  .nomeM, .inputMes {
+  .nomeM,
+  .inputMes {
     font-size: 1.2rem;
     padding: 8px 15px;
   }
@@ -147,7 +142,8 @@ line-height: normal;
 }
 
 @media (max-width: 480px) {
-  .nomeM, .inputMes {
+  .nomeM,
+  .inputMes {
     font-size: 1rem;
     padding: 6px 10px;
   }
