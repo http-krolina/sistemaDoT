@@ -1,6 +1,8 @@
+/* Seu arquivo CSS (ex: Footer.module.css ou styles.css) */
+
 .footer {
   width: 100%;
-  height: 5rem; /* 80px */
+  height: 4rem; /* 80px */
   background-color: #171717;
   display: flex;
   justify-content: center;
@@ -8,13 +10,28 @@
   background: #171717;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(35px);
+
+  /* PROPRIEDADES CHAVE PARA OCULTAR/EXIBIR */
+  position: fixed; /* Fixa o footer na viewport */
+  bottom: 0; /* Alinha na parte inferior da viewport */
+  left: 0; /* Garante que ele ocupe toda a largura */
+  opacity: 0; /* Começa totalmente transparente */
+  visibility: hidden; /* Oculta para não ser interativo */
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Transição suave */
+  z-index: 1000; /* Garante que ele fique acima de outros elementos */
+}
+
+/* Esta classe será adicionada via JavaScript quando o footer deve aparecer */
+.footer.visible {
+  opacity: 1; /* Torna visível */
+  visibility: visible; /* Torna interativo */
 }
 
 footer p {
   color: #fff;
-  font-family: "Century Gothic" sans-serif;
-  font-size: 20px;
-  font-style: "regular";
+  font-family: "Century Gothic", sans-serif; /* Certifique-se de que "Century Gothic" está disponível ou use um fallback */
+  font-size: 1rem;
+  font-style: normal; /* Corrigido de "regular" */
   font-weight: 400;
   line-height: normal;
 }

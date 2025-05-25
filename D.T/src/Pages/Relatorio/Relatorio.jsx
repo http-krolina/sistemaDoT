@@ -3,6 +3,7 @@ import styles from "./Relatorio.module.css";
 import Logo from "../../assets/LOGO1.png"; // Ajuste o caminho conforme necessário
 import { Footer } from "../../components/Footer/Footer";
 import TabelaMes from "../../components/TabelaMes/TabelaMes";
+import TabelaPontoDetalhada from "../../components/TabelaPontoDetalhada/TabelaPontoDetalhada"; // <--- Mantenha esta importação
 
 const Relatorio = () => {
   return (
@@ -48,6 +49,9 @@ const Relatorio = () => {
       <div className={styles.tabelaMes}>
         <TabelaMes />
       </div>
+
+      {/* Adicione o novo componente aqui, abaixo de TabelaMes */}
+      <TabelaPontoDetalhada /> 
 
       <Footer />
     </div>

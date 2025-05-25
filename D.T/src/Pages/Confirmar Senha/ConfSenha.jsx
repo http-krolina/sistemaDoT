@@ -1,7 +1,7 @@
 // src/components/PasswordRecovery/Step1.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./RecSenha.module.css";
+import styles from "./ConfSenha.module.css";
 
 function Step1() {
   const [cpf, setCpf] = useState("");
@@ -16,34 +16,32 @@ function Step1() {
   };
 
   const handleCancel = () => {
-    navigate("/"); // Volta para a página de login
+    navigate(""); // Volta para a página de login
   };
 
-    const handleRecover = () => {
-    // Adicione aqui qualquer lógica de validação necessária para CPF e Matrícula
-    if (cpf && matricula) { // Exemplo de validação simples
-        navigate("../Confirmar Senha/ConfSenha.jsx"); // Use o caminho de rota definido!
-    } else {
-        alert("Por favor, preencha o CPF e a Matrícula.");
-    }
+  const handleRecover = () => {
+    // Adicione aqui qualquer lógica de validação necessária
+    // antes de navegar para a próxima tela
+
+    navigate(""); // Ou para a próxima etapa de recuperação
   };
 
   return (
     <section className={styles.section2}>
       <div className={styles.div1sec2}>
-        <h2>Recupere a sua senha:</h2>
+        <h2>Recupere a sua senha</h2>
       </div>
 
       <div className={styles.divscentrais}>
-        <label htmlFor="cpf">CPF:</label>
+        <label htmlFor="Nova-Senha">Nova Senha:</label>
         <br />
         <div className={styles.inputContainer}>
           <input
-            placeholder="Digite Seu CPF"
+            placeholder="Digite sua senha"
             className={styles.inputstyle}
             type="password"
-            id="cpf"
-            value={cpf}
+            id="Senha"
+            value={Senha}
             onChange={(e) => setCpf(e.target.value)}
           />
           <img
@@ -56,15 +54,15 @@ function Step1() {
       </div>
 
       <div className={styles.divscentrais}>
-        <label htmlFor="matricula">Matricula:</label>
+        <label htmlFor="Repita a senha">Confirme sua senha:</label>
         <br />
         <div className={styles.inputContainer}>
           <input
-            placeholder="Digite Sua Matricula"
+            placeholder="Digite novamente sua senha"
             className={styles.inputstyle}
             type="password"
-            id="matricula"
-            value={matricula}
+            id="Senha"
+            value={SenhaConfirmação}
             onChange={(e) => setMatricula(e.target.value)}
           />
           <img
@@ -87,7 +85,7 @@ function Step1() {
           className={`${styles.botoes} ${styles.botaorec}`}
           onClick={handleRecover}
         >
-          RECUPERAR SENHA
+          Confirmar
         </button>
       </div>
     </section>

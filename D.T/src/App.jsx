@@ -5,6 +5,7 @@ import PaginaInicial from "./Pages/PaginaInicial/PagInicial";
 import Relatorio from "./Pages/Relatorio/Relatorio";
 import Abono from "./Pages/Abono/Abono";
 import RecSenha from "./Pages/Recuperar Senha/RecSenha";
+import ConfSenha from "./Pages/Confirmar Senha/ConfSenha";
 import styles from "./App.module.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/relatorios" element={<Relatorio />} />
           <Route path="/abono" element={<Abono />} />
           <Route path="/recuperar-senha" element={<RecSenha />} />
+          <Route path="/Confirmar-Senha" element={<ConfSenha />} />
         </Routes>
       </div>
     </Router>

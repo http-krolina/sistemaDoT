@@ -1,12 +1,26 @@
-.tabelaMes {
-  border-radius: 10px;
-  border: 1px solid #fff;
+/* src/components/TabelaMes/TabelaMes.module.css */
 
-  background: rgba(23, 23, 23, 0.5);
-  width: 650px;
-  height: 20px;
+/*
+   SEUS ESTILOS EXISTENTES - NENHUMA ALTERAÇÃO NESTES CÓDIGOS,
+   EXCETO NAS SEÇÕES '.tabelaMes', '.nomeM' e '.inputMes' PARA O NOVO VISUAL.
+*/
+
+.tabelaMes {
+  /* Modificações para o visual "Mês | MAIO" */
+  border-radius: 10px; /* Bordas arredondadas para toda a tabela */
+  border: 1px solid #FFF;
+  background: rgba(23, 23, 23, 0.50); /* Cor de fundo escura, similar à imagem */
+  width: 650px; /* Mantém a largura fixa como você solicitou */
+  /* height: 20px; Removido para que a altura seja definida pelo conteúdo e padding */
   flex-shrink: 0;
   margin: 0 auto;
+  box-sizing: border-box; /* Essencial para que padding não aumente a largura/altura */
+}
+
+/* Garante que as células da tabela não tenham bordas internas visíveis como antes */
+.tabelaMes td {
+  border: none;
+  padding: 0; /* Remove padding padrão das células para ter controle total */
 }
 
 .titulo {
@@ -15,7 +29,6 @@
   width: 100%;
   height: 100px;
   color: #fff;
-
   text-align: center;
   font-family: "Open Sans";
   font-size: 35px;
@@ -23,27 +36,119 @@
   font-weight: 800;
   line-height: normal;
   margin-top: 10rem;
-}
-
-.inputMes {
-  display: block;
-  margin-right: -17.5rem;
-  background: rgba(23, 23, 23, 0.5);
-  color: white;
-  font-size: 20px;
-  border-radius: 10px;
-  border: none;
-
-  padding: 2rem 2rem;
+  box-sizing: border-box;
 }
 
 .nomeM {
+  /* Estilo para a célula "Mês" */
   color: #fff;
-
   text-align: center;
   font-family: "Open Sans";
+<<<<<<< HEAD
   font-size: 1.5rem;
   font-style: bold;
+=======
+  font-size: 1.5rem; /* Ajustado para ficar mais próximo da imagem */
+  font-style: normal;
+>>>>>>> 59f573f17eac1278a645824f5548cb1cfd2229d8
   font-weight: 300;
   line-height: normal;
+  padding: 10px 20px; /* Padding para dar espaço ao texto */
+  background-color: transparent; /* Transparente para usar o background da .tabelaMes */
+  border-right: 1px solid #555; /* Borda separadora entre "Mês" e o input */
+  height: 100%; /* Garante que ocupe a altura da linha */
+  display: flex; /* Para centralizar o texto "Mês" verticalmente */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  box-sizing: border-box;
+}
+
+.inputMes {
+  /* Estilo para o campo de input "Digite o mês" */
+  display: block; /* Mantém como bloco */
+  /* margin-right: -17.5rem; REMOVIDO: Isso estava causando problemas de layout.
+     A centralização é feita pelo flex no .container ou por margin: 0 auto na tabela. */
+  margin: 0; /* Remove margens extras */
+  background: transparent; /* Fundo transparente para usar o background da .tabelaMes */
+  color: white;
+  font-size: 1.5rem; /* Aumentado para corresponder ao "MAIO" da imagem */
+  border-radius: 0 10px 10px 0; /* Apenas lado direito arredondado */
+  border: none; /* Sem borda própria, a borda é da tabela */
+  padding: 10px 20px; /* Padding para o texto dentro do input */
+  height: 100%; /* Ocupa a altura da linha da tabela */
+  width: 100%; /* Ocupa a largura restante da célula */
+  box-sizing: border-box; /* Inclui padding na largura do input */
+}
+
+.inputMes::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Cor do placeholder mais visível */
+}
+
+/* ============================================================================== */
+/* NOVOS ESTILOS (ou mantidos) PARA O BOTÃO OK E SEU CONTÊINER */
+
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 650px; /* Usando a largura da tabela como referência para o bloco */
+  width: 100%;
+  box-sizing: border-box;
+  /* Não tem background ou padding aqui para não ser uma "box" visual */
+}
+
+.okButtonWrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; /* Espaço entre a tabela e o botão */
+  box-sizing: border-box;
+}
+
+.okButton {
+ display: inline-block;
+width: 10.8125rem;
+height: 3.125rem;
+padding: 0.6875rem 7.4375rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+flex-shrink: 0;
+border-radius: 3.125rem 0.625rem;
+border: 3px solid #FFF;
+background: #B2EB00;
+color: #040301;
+font-family: "Open Sans";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+
+.okButton:hover {
+  background-color: #9ecc00;
+}
+
+/* ============================================================================== */
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+  .tabelaMes {
+    width: 100%; /* Permite que a tabela se adapte em telas menores */
+  }
+  .nomeM, .inputMes {
+    font-size: 1.2rem;
+    padding: 8px 15px;
+  }
+  /* O inputMes margin-right: -17.5rem estava forçando uma largura fixa,
+     com a remoção dele, a flexibilidade melhora. */
+}
+
+@media (max-width: 480px) {
+  .nomeM, .inputMes {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
 }
