@@ -1,5 +1,7 @@
 .containerPagInicial {
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
+
   font-family: Arial, sans-serif;
   background-color: #363d4d;
   min-height: 100vh;
@@ -16,7 +18,7 @@
 }
 
 .logo {
-  height: 30px;
+  height: 60px;
 }
 
 .menuInicial {
