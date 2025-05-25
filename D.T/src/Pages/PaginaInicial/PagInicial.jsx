@@ -44,12 +44,16 @@ const PaginaInicial = () => {
         <div className={styles.registro}>
           <h3>REGISTRAR PONTO</h3>
           <div className={styles.infoHorario}>
-            <span>8h 15h</span>
-            <span>Quinta-feira, 04/05/2025</span>
+            <span>8h 15min</span>
+            <div className={styles.data}>
+              <span>Quinta-feira, 04/05/2025</span>
+            </div>
           </div>
           <div className={styles.botoesRegistro}>
             <button className={styles.entrada}>REGISTRAR ENTRADA</button>
             <button className={styles.pausa}>REGISTRAR PAUSA</button>
+          </div>
+          <div className={styles.botoesRegistro2}>
             <button className={styles.voltaP}>RETORNO PAUSA</button>
             <button className={styles.saida}>REGISTRAR SAÍDA</button>
           </div>
