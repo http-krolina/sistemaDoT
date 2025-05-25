@@ -126,10 +126,12 @@
   display: absolute;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente (opcional) */
-  margin-left: 38rem;
+  margin-left: 3rem;
 
   font-size: 1.4em;
   color: #ffffff;
+
+  margin-top: 1rem;
 }
 
 .dados p {
@@ -137,7 +139,9 @@
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente (opcional) */
 
-  margin-left: 38rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
   color: #ffffff;
 }
 
