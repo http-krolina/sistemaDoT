@@ -25,7 +25,9 @@
   align-items: center; /* Centraliza verticalmente (opcional) */
   gap: 0.625rem; /* 10px convertido para rem */
   width: 100%; /* Ocupa toda a largura disponível */
-  margin: 0 auto;
+
+  margin-left: -20rem;
+  margin-right: 2rem;
 }
 
 .menuButtonDesativado {

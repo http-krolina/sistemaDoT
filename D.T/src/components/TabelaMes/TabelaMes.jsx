@@ -1,6 +1,6 @@
 // src/components/TabelaMes/TabelaMes.jsx
 
-import React from 'react'; // Importe React se ainda não estiver
+import React from "react"; // Importe React se ainda não estiver
 import styles from "./TabelaMes.module.css";
 
 export default function TabelaMes() {
@@ -19,7 +19,7 @@ export default function TabelaMes() {
       <table className={styles.tabelaMes}>
         <tbody>
           <tr>
-            <td className={styles.nomeM}>Mês |</td>
+            <td className={styles.nomeM}>Mês </td>
             <td>
               <input
                 type="text"
@@ -39,7 +39,6 @@ export default function TabelaMes() {
         </button>
       </div>
       {/* ============================================================================== */}
-
     </div>
   );
 }
