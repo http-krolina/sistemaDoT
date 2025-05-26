@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Cadastro from "./pages/Cadastro/Cadastro";
-import Login from "./pages/Login/Login";
-import PaginaInicial from "./Pages/PaginaInicial/PagInicial";
-import Relatorio from "./Pages/Relatorio/Relatorio";
-import Abono from "./Pages/Abono/Abono";
-import RecSenha from "./Pages/Recuperar Senha/RecSenha";
-import ConfSenha from "./Pages/Confirmar Senha/ConfSenha";
-import styles from "./App.module.css";
+import Cadastro from "./Pages/Cadastro/Cadastro"; // OK, se a pasta for 'Cadastro'
+import Login from "./Pages/Login/Login";           // OK, se a pasta for 'Login'
+import PaginaInicial from "./Pages/PaginaInicial/PagInicial"; // OK, se a pasta for 'PaginaInicial'
+import Relatorio from "./Pages/Relatorio/Relatorio"; // OK, se a pasta for 'Relatorio'
+import RecSenha from "./Pages/recuperar-senha/RecSenha"; 
+import BaterPonto from "./Pages/bater-ponto/BaterPonto"; 
+import ConfirmarCorrecao from "./Pages/confirmar-correcao/ConfirmarCorrecao";
+
+import styles from "./App.module.css"; // OK
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/pagina-inicial" element={<PaginaInicial />} />
           <Route path="/relatorios" element={<Relatorio />} />
-          <Route path="/abono" element={<Abono />} />
           <Route path="/recuperar-senha" element={<RecSenha />} />
-          <Route path="/Confirmar-Senha" element={<ConfSenha />} />
+          <Route path="/bater-ponto" element={<BaterPonto />} /> 
+          <Route path="confirmar-correcao" element={<ConfirmarCorrecao />} />
         </Routes>
       </div>
     </Router>

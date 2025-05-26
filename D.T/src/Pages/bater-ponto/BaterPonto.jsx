@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./PagInicial.module.css"; // Verifique se o nome do arquivo CSS está correto
+import styles from "./BaterPonto.module.css";
 import Logo from "../../assets/LOGO1.png"; // Ajuste o caminho conforme necessário
 import { Footer } from "../../components/Footer/Footer";
 
@@ -40,47 +40,35 @@ const PaginaInicial = () => {
           </div>
         </div>
 
-        {/* <<-- REGISTRO DE PONTO -->> */}
+        {/* <<-- REGISTRO DE PONTO COM NOVO LAYOUT -->> */}
         <div className={styles.registro}>
           <h3 className={styles.registroTitulo}>REGISTRAR PONTO</h3>{" "}
+          {/* Título com classe específica */}
           <div className={styles.horarioDisplay}>
             <span className={styles.horas}>08</span>
             <span className={styles.h}>h</span>
             <span className={styles.minutos}>15</span>
             <span className={styles.min}>min</span>
+            {/* Opcional: o "69" é um contador, poderia ser um span ou div com position absolute */}
+            {/* <span className={styles.notificationBadge}>69</span> */}
           </div>
           <p className={styles.dataDisplay}>
+            {/* <<-- Ícone de Calendário aqui (exemplo) -->> */}
+            {/* Se usar react-icons: <FaRegCalendarAlt className={styles.iconeData} /> */}
+            {/* Se usar imagem: <img src={IconeCalendario} alt="Calendário" className={styles.iconeData} /> */}
             <span className={styles.iconeData}></span> Segunda-feira, 12/05/2025
           </p>
 
-          
+          {/* NOVO TEXTO AQUI */}
+          <p className={styles.infoPonto}>Ponto registrado às 08:00</p>
+          {/* FIM DO NOVO TEXTO */}
 
-          {/* Botões de Registro de Ponto */}
-          <div className={styles.botoesGrid}>
-            {/* Botão de Registrar Entrada (Exemplo de Link) */}
-            <Link to="/bater-ponto" className={styles.registroButton}>
-              <span className={styles.buttonIcon}>⬅️</span>
-              REGISTRAR ENTRADA
-            </Link>
-
-            <button className={styles.registroButton}>
-              <span className={styles.buttonIcon}>☕</span>
-              REGISTRAR PAUSA
-            </button>
-            <button className={styles.registroButton}>
-              <span className={styles.buttonIcon}>☕</span>
-              RETORNO PAUSA
-            </button>
-            <button className={styles.registroButton}>
-              <span className={styles.buttonIcon}>➡️</span>
-              REGISTRAR SAÍDA
-            </button>
-          </div>
-
+          {/* O botão "SOLICITAR" original que você queria tornar navegável */}
+          {/* Mantenha o Link envolvendo o botão para que ele seja clicável */}
           
         </div>
 
-       {/* <<-- NOVA CAIXA COM O FORMULÁRIO -->> */}
+         {/* <<-- NOVA CAIXA COM O FORMULÁRIO -->> */}
                 <div className={styles.outraBox}>
                   <h2 className={styles.tituloForm}>CORRIGIR PONTO</h2>
         

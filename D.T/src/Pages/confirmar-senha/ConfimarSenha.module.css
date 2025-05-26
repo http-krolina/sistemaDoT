@@ -1,0 +1,106 @@
+/* src/components/PasswordRecovery/PasswordRecovery.module.css */
+.section2 {
+  background-color: rgb(23, 23, 23);
+  box-shadow: -20px 20px 25px black;
+  border-radius: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 2rem;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.div1sec2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.divscentrais {
+  color: white;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.inputstyle {
+  width: 100%;
+  padding: 0.7rem 2.5rem 0.7rem 1rem;
+  border-radius: 30px;
+  border: 3px solid black;
+  font-size: 1rem;
+  background-color: rgb(217, 217, 217);
+}
+
+.olho {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  cursor: pointer;
+}
+
+.botoesContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+.botoes {
+  flex: 1;
+  max-width: 45%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.botaorec {
+  background: rgb(178, 235, 0);
+  color: black;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50px 10px;
+}
+
+.botaocan {
+  background: rgb(255, 255, 255);
+  color: black;
+  border: 3px solid rgb(178, 235, 0);
+  border-radius: 40px 10px;
+}
+
+@media (max-width: 600px) {
+  .div1sec2 {
+    font-size: 1.4rem;
+  }
+
+  .inputstyle {
+    font-size: 0.9rem;
+  }
+
+  .botoes {
+    max-width: 100%;
+  }
+
+  .botoesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,7 +1,7 @@
 // src/components/PasswordRecovery/Step1.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./ConfSenha.module.css";
+import styles from "./RecSenha.module.css";
 
 function Step1() {
   const [cpf, setCpf] = useState("");
@@ -16,60 +16,52 @@ function Step1() {
   };
 
   const handleCancel = () => {
-    navigate(""); // Volta para a página de login
+    navigate("/"); // Volta para a página de login
   };
 
   const handleRecover = () => {
-    // Adicione aqui qualquer lógica de validação necessária
-    // antes de navegar para a próxima tela
-
-    navigate(""); // Ou para a próxima etapa de recuperação
+    // Adicione aqui qualquer lógica de validação necessária para CPF e Matrícula
+    if (cpf && matricula) {
+      // Exemplo de validação simples
+      navigate("../Confirmar Senha/ConfSenha.jsx"); // Use o caminho de rota definido!
+    } else {
+      alert("Por favor, preencha o CPF e a Matrícula.");
+    }
   };
 
   return (
+    // Agora o CenteredLayout envolve toda a sua seção de recuperação de senha
     <section className={styles.section2}>
       <div className={styles.div1sec2}>
-        <h2>Recupere a sua senha</h2>
+        <h2>Recupere a sua senha:</h2>
       </div>
 
       <div className={styles.divscentrais}>
-        <label htmlFor="Nova-Senha">Nova Senha:</label>
+        <label htmlFor="cpf">CPF:</label>
         <br />
         <div className={styles.inputContainer}>
           <input
-            placeholder="Digite sua senha"
+            placeholder="Digite Seu CPF"
             className={styles.inputstyle}
-            type="password"
-            id="Senha"
-            value={Senha}
+            type="text"
+            id="cpf"
+            value={cpf}
             onChange={(e) => setCpf(e.target.value)}
-          />
-          <img
-            className={styles.olho}
-            src="https://cdn-icons-png.flaticon.com/512/709/709612.png"
-            onClick={() => togglePassword("cpf")}
-            alt="Mostrar senha"
           />
         </div>
       </div>
 
       <div className={styles.divscentrais}>
-        <label htmlFor="Repita a senha">Confirme sua senha:</label>
+        <label htmlFor="matricula">Matricula:</label>
         <br />
         <div className={styles.inputContainer}>
           <input
-            placeholder="Digite novamente sua senha"
+            placeholder="Digite Sua Matricula"
             className={styles.inputstyle}
-            type="password"
-            id="Senha"
-            value={SenhaConfirmação}
+            type="text"
+            id="matricula"
+            value={matricula}
             onChange={(e) => setMatricula(e.target.value)}
-          />
-          <img
-            className={styles.olho}
-            src="https://cdn-icons-png.flaticon.com/512/709/709612.png"
-            onClick={() => togglePassword("matricula")}
-            alt="Mostrar senha"
           />
         </div>
       </div>
@@ -85,7 +77,7 @@ function Step1() {
           className={`${styles.botoes} ${styles.botaorec}`}
           onClick={handleRecover}
         >
-          Confirmar
+          RECUPERAR SENHA
         </button>
       </div>
     </section>

@@ -1,6 +1,7 @@
-body {
+html, body, #root {
+  height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #c4c9cd 100%, #a4a2a2 100%);
-  min-height: 100vh;
+  padding: 0;
+  background-color: #363D4D;
+ 
 }

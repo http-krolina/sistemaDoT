@@ -34,16 +34,6 @@
   margin: 0 auto;
 }
 
-
-.mensagemCorrecao {
-  font-size: 1.1rem;
-  color: #666;
-  text-align: center; /* Centraliza o texto da mensagem */
-  margin-bottom: 25px; /* Espaço abaixo da mensagem e antes do formulário */
-  line-height: 1.5; /* Melhora a legibilidade */
-}
-
-
 .menuButtonDesativado {
   padding: 0.625rem 1.875rem; /* 10px 30px */
   background-color: #f0f0f0;
