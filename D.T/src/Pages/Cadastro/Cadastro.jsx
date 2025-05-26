@@ -1,6 +1,6 @@
 import { useState } from "react";
-import logo from "../../assets/LOGO1.png"; // Ajuste o caminho conforme necessário
-import styles from "./Cadastro.module.css"; // Importe o CSS
+import logo from "../../assets/LOGO1.png"; 
+import styles from "./Cadastro.module.css"; 
 import { Footer } from "../../components/Footer/Footer";
 
 const Cadastro = () => {
@@ -24,7 +24,7 @@ const Cadastro = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Lógica de cadastro aqui
+    
     console.log(formData);
   };
 

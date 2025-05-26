@@ -45,22 +45,22 @@
 .formcard {
   background-color: #171717;
   border: 0.063rem solid #fff;
-  border-radius: 2.1875rem; /* 35px */
+  border-radius: 2.1875rem; 
   box-shadow: -40px 40px 50px 3px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(2.1875rem); /* 35px */
+  backdrop-filter: blur(2.1875rem); 
   padding: 3rem;
   margin-top: 0.5rem;
-  max-width: 56.25rem; /* 900px */
+  max-width: 56.25rem; 
   width: 62.75rem;
   height: 45.5rem;
   flex-shrink: 0;
-  backdrop-filter: blur(2.1875rem); /* 35px */
+  backdrop-filter: blur(2.1875rem); 
 }
 
 h1 {
   color: #fff;
   font-family: "Open Sans";
-  font-size: 1.875rem; /* 30px */
+  font-size: 1.875rem; 
   font-style: normal;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -82,7 +82,7 @@ form {
 }
 
 .formgroup label {
-  font-size: 1rem; /* 20px */
+  font-size: 1rem; 
   font-family: "inter";
   font-weight: 600;
   font-style: normal;
@@ -93,7 +93,7 @@ form {
 
 .formgroup input {
   padding: 0.75rem 1rem;
-  border-radius: 2.1875rem; /* 35px */
+  border-radius: 2.1875rem; 
   border: 0.125rem solid #222222;
   font-size: 1rem;
   font-style: normal;
@@ -136,7 +136,7 @@ form {
 }
 
 .opcional {
-  font-size: 1rem; /* 16px */
+  font-size: 1rem; 
   font-weight: 400;
   opacity: 0.6;
   margin-left: 0.5rem;
@@ -149,7 +149,7 @@ form {
   color: #040301;
   width: 19.625rem;
   height: 3.2rem;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem; 
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   padding: 0.6875rem 7.4375rem; 

@@ -16,21 +16,21 @@ function RecSenha() {
   };
 
   const handleCancel = () => {
-    navigate("/"); // Volta para a página de login
+    navigate("/"); 
   };
 
   const handleRecover = () => {
-    // Adicione aqui qualquer lógica de validação necessária para CPF e Matrícula
+    
     if (cpf && matricula) {
-      // Exemplo de validação simples
-      navigate("./Confirmar-Senha"); // Use o caminho de rota definido!
+     
+      navigate("./Confirmar-Senha"); 
     } else {
       alert("Por favor, preencha o CPF e a Matrícula.");
     }
   };
 
   return (
-    // Agora o CenteredLayout envolve toda a sua seção de recuperação de senha
+    
     <section className={styles.section2}>
       <div className={styles.div1sec2}>
         <h2>Recupere a sua senha:</h2>

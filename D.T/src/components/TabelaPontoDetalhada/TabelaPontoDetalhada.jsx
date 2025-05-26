@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './TabelaPonto.module.css'; // <--- Importando o CSS principal aqui
+import styles from './TabelaPonto.module.css';
 
 const TabelaPontoDetalhada = () => {
   return (
-    // Reutilizando as classes do seu Relatorio.module.css
+    
     <div className={styles.blocoCartaoPonto}>
-      {/* Tabela de Ponto Detalhada (Card de Ponto) */}
+      
       <div className={styles.cardPontoDetalhes}>
         <div className={styles.cardPontoHeader}>
           <p>EMISSÃO: 12/05/2025</p>
@@ -29,7 +29,6 @@ const TabelaPontoDetalhada = () => {
         </div>
       </div>
 
-      {/* Tabela de Ponto Detalhada sem scroll interno */}
       <div className={styles.tabelaPontoContainer}>
         <table>
           <thead>
@@ -47,7 +46,6 @@ const TabelaPontoDetalhada = () => {
             </tr>
           </thead>
           <tbody>
-            {/* Gerando algumas linhas de exemplo para forçar o scroll da PÁGINA */}
             {Array.from({ length: 30 }).map((_, index) => (
               <tr key={index}>
                 <td>{`Dia ${index + 1}`}</td>

@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "./BaterPonto.module.css";
-import Logo from "../../assets/LOGO1.png"; // Ajuste o caminho conforme necessário
+import Logo from "../../assets/LOGO1.png"; 
 import { Footer } from "../../components/Footer/Footer";
+import IconeLocalizacao from "../../assets/Local.png";
+import IconeTelefone from "../../assets/Contato.png";
+import IconePermitido from "../../assets/Verificação.png";
+import IconeHorario from "../../assets/Horario.png";
+import ImagemMapa from "../../assets/Recife.png";
 
 const PaginaInicial = () => {
   return (
@@ -40,35 +45,27 @@ const PaginaInicial = () => {
           </div>
         </div>
 
-        {/* <<-- REGISTRO DE PONTO COM NOVO LAYOUT -->> */}
+        
         <div className={styles.registro}>
           <h3 className={styles.registroTitulo}>REGISTRAR PONTO</h3>{" "}
-          {/* Título com classe específica */}
+          
           <div className={styles.horarioDisplay}>
             <span className={styles.horas}>08</span>
             <span className={styles.h}>h</span>
             <span className={styles.minutos}>15</span>
             <span className={styles.min}>min</span>
-            {/* Opcional: o "69" é um contador, poderia ser um span ou div com position absolute */}
-            {/* <span className={styles.notificationBadge}>69</span> */}
+           
           </div>
           <p className={styles.dataDisplay}>
-            {/* <<-- Ícone de Calendário aqui (exemplo) -->> */}
-            {/* Se usar react-icons: <FaRegCalendarAlt className={styles.iconeData} /> */}
-            {/* Se usar imagem: <img src={IconeCalendario} alt="Calendário" className={styles.iconeData} /> */}
+           
             <span className={styles.iconeData}></span> Segunda-feira, 12/05/2025
           </p>
 
-          {/* NOVO TEXTO AQUI */}
-          <p className={styles.infoPonto}>Ponto registrado às 08:00</p>
-          {/* FIM DO NOVO TEXTO */}
-
-          {/* O botão "SOLICITAR" original que você queria tornar navegável */}
-          {/* Mantenha o Link envolvendo o botão para que ele seja clicável */}
+          
+          <p className={styles.infoPonto}>REGISTRO REALIZADO COM SUCESSO!</p>
           
         </div>
 
-         {/* <<-- NOVA CAIXA COM O FORMULÁRIO -->> */}
                 <div className={styles.outraBox}>
                   <h2 className={styles.tituloForm}>CORRIGIR PONTO</h2>
         
@@ -128,6 +125,21 @@ const PaginaInicial = () => {
         </Link>
                 </div>
         
+         
+                <div className={styles.localizacaoBox}>
+                  <div className={styles.localizacaoDetalhes}>
+                    <p><img src={IconeLocalizacao} alt="Endereço" className={styles.localizacaoIcone} /> Rua do Apólo 181, Recife, PE, 50030-220</p>
+                    <p className={styles.local}>Local: Porto Digital</p>
+                    <p><img src={IconeTelefone} alt="Telefone" className={styles.localizacaoIcone} /> (81) 3419-8000</p>
+                    <p><img src={IconePermitido} alt="Área Permitida" className={styles.localizacaoIcone} /> Dentro da área permitida.</p>
+                    <p><img src={IconeHorario} alt="Horário Atual" className={styles.localizacaoIcone} /> 08 : 15</p>
+                  </div>
+                  <div className={styles.mapaContainer}>
+                   
+                    <img src={ImagemMapa} alt="Mapa da Localização" className={styles.mapaImagem} />
+                  </div>
+                </div>
+
                 <Footer />
               </div>
             </div>

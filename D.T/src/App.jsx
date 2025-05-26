@@ -1,13 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Cadastro from "./Pages/Cadastro/Cadastro"; // OK, se a pasta for 'Cadastro'
-import Login from "./Pages/Login/Login"; // OK, se a pasta for 'Login'
-import PaginaInicial from "./Pages/PaginaInicial/PagInicial"; // OK, se a pasta for 'PaginaInicial'
-import Relatorio from "./Pages/Relatorio/Relatorio"; // OK, se a pasta for 'Relatorio'
+import Cadastro from "./Pages/Cadastro/Cadastro"; 
+import Login from "./Pages/Login/Login"; 
+import PaginaInicial from "./Pages/PaginaInicial/PagInicial"; 
+import Relatorio from "./Pages/Relatorio/Relatorio"; 
 import RecSenha from "./Pages/recuperar-senha/RecSenha";
 import BaterPonto from "./Pages/bater-ponto/BaterPonto";
 import ConfirmarCorrecao from "./Pages/confirmar-correcao/ConfirmarCorrecao";
-
-import styles from "./App.module.css"; // OK
+import styles from "./App.module.css"; 
 import ConfirmarSenha from "./pages/confirmar-senha/ConfirmarSenha";
 
 function App() {

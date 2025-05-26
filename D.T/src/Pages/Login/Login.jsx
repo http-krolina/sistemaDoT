@@ -1,7 +1,8 @@
+// Login.jsx
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import styles from "./Login.module.css";
-import Fundo from "../../assets/Fundo.png"; // Ajuste o caminho conforme necessário
+import Fundo from "../../assets/Fundo.png"
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -10,7 +11,7 @@ function Login() {
     <div
       className={styles.appContainerLogin}
       style={{
-        backgroundImage: `url(${Fundo})`,
+        backgroundImage: `url(${Fundo})`, // Agora Fundo está definido
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

@@ -1,7 +1,11 @@
-/* Seu CSS existente - mantenho tudo o que você tinha */
-
 :root {
-  font-size: 16px; /* Defina a font-size base para 1rem = 16px. Se já tiver, remova esta linha. */
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .containerPagInicial {
@@ -18,48 +22,50 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.625rem 1.875rem; /* 10px 30px */
+  padding: 0.625rem 1.875rem;
+  width: 100%;
+  height: 5rem;
 }
 
 .logo {
-  height: 1.875rem; /* 30px */
+  height: 8.25rem;
 }
 
 .menuInicial {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente (opcional) */
-  gap: 0.625rem; /* 10px */
-  width: 100%; /* Ocupa toda a largura disponível */
-  margin: 0 auto;
-}
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
 
+  margin-left: -20rem;
+  margin-right: 2rem;
+}
 
 .mensagemCorrecao {
   font-size: 1.1rem;
   color: #666;
-  text-align: center; /* Centraliza o texto da mensagem */
-  margin-bottom: 25px; /* Espaço abaixo da mensagem e antes do formulário */
-  line-height: 1.5; /* Melhora a legibilidade */
+  text-align: center;
+  margin-bottom: 1.5625rem;
+  line-height: 1.5;
 }
 
-
 .menuButtonDesativado {
-  padding: 0.625rem 1.875rem; /* 10px 30px */
+  padding: 0.625rem 1.875rem;
   background-color: #f0f0f0;
   border: none;
-  border-radius: 0.3125rem; /* 5px */
+  border-radius: 0.3125rem;
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s;
-  min-width: 9.375rem; /* 150px */
+  min-width: 9.375rem;
   text-align: center;
 
-  text-decoration: none; /* Remove sublinhado */
+  text-decoration: none;
   display: inline-block;
 
-  border-radius: 0.625rem; /* 10px */
-  border: 0.1875rem solid #fff; /* 3px */
+  border-radius: 0.625rem;
+  border: 0.1875rem solid #fff;
 
   background: #b2eb00;
 
@@ -70,25 +76,20 @@
 }
 
 .menuButtonPrincipal {
-  padding: 0.625rem 1.875rem; /* 10px 30px */
+  padding: 0.625rem 1.875rem;
   background-color: #f0f0f0;
   border: none;
-  border-radius: 0.3125rem; /* 5px */
+  border-radius: 0.3125rem;
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s;
-  min-width: 9.375rem; /* 150px */
+  min-width: 9.375rem;
   text-align: center;
-
-  text-decoration: none; /* Remove sublinhado */
+  text-decoration: none;
   display: inline-block;
-
-  border-radius: 0.625rem; /* 10px */
-
-  border: 0.1875rem solid #b2eb00; /* 3px */
-
+  border-radius: 0.625rem;
+  border: 0.1875rem solid #b2eb00;
   background: #fff;
-
   color: #000;
   font-size: 1rem;
   font-weight: bold;
@@ -96,36 +97,36 @@
 }
 
 .menuButtonDesativado:hover {
-  border-radius: 0.625rem; /* 10px */
-  border: 0.1875rem solid #fff; /* 3px */
+  border-radius: 0.625rem;
+  border: 0.1875rem solid #fff;
   background: #a4a0a0;
 }
 
 .conteudo {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza 'perfil', 'registro' e 'outraBox' horizontalmente */
+  align-items: center;
   justify-content: flex-start;
   background-color: #363d4d;
-  padding: 1.875rem; /* 30px */
+  padding: 1.875rem;
   flex: 1;
-  max-width: 120rem; /* Adicione uma largura máxima ao conteúdo se desejar */
-  margin: 0 auto; /* Centraliza o conteúdo na página */
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .perfil {
-  display: flex; /* Torna-o um container flex */
-  flex-direction: row; /* Alinha os itens em linha (foto à esquerda, dados à direita) */
-  align-items: center; /* Centraliza os itens (foto e dados) verticalmente */
-  justify-content: flex-start; /* Alinha os itens ao início do container */
-  padding: 1.25rem 1.875rem; /* 20px top/bottom, 30px left/right para padding interno */
-  width: 100%; /* Ocupa a largura total do seu container pai (.conteudo) */
-  max-width: 80rem; /* Defina uma largura máxima razoável para centralizar (ajuste conforme necessário) */
-  height: auto; /* Ajusta a altura automaticamente com o conteúdo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 1905px;
+  height: 294px;
+  margin-left: -1px;
+
   background-color: #171717;
-  margin-bottom: 1.875rem; /* 30px */
-  margin-left: auto; /* Centraliza o bloco .perfil horizontalmente */
-  margin-right: auto; /* Centraliza o bloco .perfil horizontalmente */
+
+  margin-bottom: 2rem;
+  align-items: center;
 }
 
 .foto {
@@ -137,60 +138,60 @@
   border-radius: 25px;
   background: rgba(217, 217, 217, 0.75);
   font-weight: bold;
-  margin-right: 2.5rem; /* Espaço entre a foto e o bloco de dados (40px) */
-  margin-bottom: 0; /* Remove a margem inferior que havia para o caso centralizado */
+  margin-right: 2.5rem;
+  margin-bottom: 0;
 }
 
 .dados {
-  display: flex; /* Torna .dados um container flex */
-  flex-direction: column; /* Empilha os elementos (h2, p) verticalmente */
-  align-items: flex-start; /* Alinha o texto à esquerda dentro de .dados */
-  text-align: left; /* Garante que o texto seja alinhado à esquerda */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .dados h2 {
   color: #ffffff;
-  font-size: 2.5rem; /* Tamanho da fonte para o nome */
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 0.5rem; /* Pequeno espaço abaixo do nome */
-  white-space: nowrap; /* Impede que o nome quebre em várias linhas se for muito longo */
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
 }
 
 .dados p {
   color: #ffffff;
-  font-size: 1.25rem; /* Tamanho da fonte para os outros textos */
-  margin-bottom: 0.25rem; /* Espaçamento entre as linhas de texto */
-  /* Remova as propriedades de margem que estavam forçando o posicionamento */
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
   margin-right: 0;
   margin-left: 0;
 }
 
-/* Nova regra para o último parágrafo, para o espaço entre as datas */
 .dados p:last-of-type {
   display: flex;
-  gap: 2.5rem; /* Espaço de 40px entre as duas partes da informação de data */
-  /* Remove margem inferior se não for necessário mais abaixo */
+  gap: 2.5rem;
   margin-bottom: 0;
 }
 
-
 .registro {
-  width: 62.75rem;
+  max-width: 62.75rem;
+  width: 100%;
   height: 37.1875rem;
-  border: 1px solid #FFF;
+  border: 0.0625rem solid #fff;
   background: rgba(255, 255, 255, 0.15);
-  box-shadow: -40px 40px 50px 3px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(35px);
+  box-shadow: -2.5rem 2.5rem 3.125rem 0.1875rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.1875rem);
   min-height: 34.375rem;
-
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-direction: column; /* Empilha os elementos verticalmente */
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
-  gap: 1.5625rem; /* 25px - Espaçamento entre os principais blocos */
-  margin-bottom: 10rem; /* Espaço abaixo do registro para a próxima box */
+  flex-direction: column;
+  align-items: center;
+  gap: 0.987rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
 }
 
 .registroTitulo {
+  display: block;
   color: #171717;
   margin-top: 1rem;
   text-align: center;
@@ -199,6 +200,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-decoration: none;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .horarioDisplay {
@@ -212,133 +217,139 @@
 .horarioDisplay .horas {
   font-size: 8rem;
   line-height: 1;
-  color: #FFF;
-text-align: center;
-font-family: "Open Sans";
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .horarioDisplay .h {
-  color: #FFF;
-font-family: "Open Sans";
-font-size: 4rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .horarioDisplay .minutos {
-  color: #FFF;
-
-text-align: center;
-font-family: "Open Sans";
-font-size: 8rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .horarioDisplay .min {
-  color: #FFF;
-font-family: "Open Sans";
-font-size: 3rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-
-
 
 .dataDisplay {
   width: 33.875rem;
-height: 2.9375rem;
-flex-shrink: 0;
-color: #FFF;
-text-align: center;
-font-family: "Open Sans";
-font-size: 1.5625rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  height: 2.9375rem;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .iconeData {
-  
+  width: 2rem;
+  height: 2rem;
 }
 
 .botoesGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.25rem; /* 20px */
+  gap: 0;
   width: 100%;
-  max-width: 37.5rem; /* 600px */
-  margin-top: 1.25rem; /* 20px */
+  max-width: 43.75rem;
+  margin-top: 1.25rem;
+  justify-items: center;
+  align-items: center;
 }
 
 .registroButton {
   background-color: #1a1a1a;
   color: #fff;
-  border: 0.125rem solid #fefffd; /* 2px */
-  border-radius: 0.5rem; /* 8px */
-  padding: 0.9375rem 1.25rem; /* 15px 20px */
-  font-size: 1em;
+  border: 0.125rem solid #fefffd;
+  border-radius: 0;
+  padding: 0.9375rem 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 0.625rem; /* 10px */
+  justify-content: center;
+  gap: 0.625rem;
+  width: 21.875rem;
+  height: 6.25rem;
 }
 
 .registroButton:hover {
   background-color: #2b2b2b;
-  transform: translateY(-0.125rem); /* -2px */
+  transform: translateY(-0.125rem);
 }
 
 .buttonIcon {
-  font-size: 1.2em;
-  color: #fafafa;
+  width: 3.5625rem;
+  height: 2.8125rem;
 }
 
-/* SEUS ESTILOS PARA O FORMULÁRIO (CONVERTIDOS PARA REM) */
 .outraBox {
-  width: 62.75rem;
+  max-width: 62.75rem;
+  width: 100%;
   height: 30.1875rem;
   flex-shrink: 0;
-  margin-top: -8rem;
-  border: 0.0625rem solid #fff; /* 1px */
+  margin-top: 2rem;
+  border: 0.0625rem solid #fff;
   background: rgba(23, 23, 23, 0.66);
-  box-shadow: -2.5rem 2.5rem 3.125rem 0.1875rem rgba(0, 0, 0, 0.25); /* -40px 40px 50px 3px */
-  backdrop-filter: blur(2.1875rem); /* 35px */
+  box-shadow: -2.5rem 2.5rem 3.125rem 0.1875rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.1875rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5625rem; /* 25px */
+  gap: 1.5625rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
 }
 
 .tituloForm {
   color: #fff;
   font-size: 2.2em;
   margin-top: 1rem;
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
   text-align: center;
 }
 
 .formGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.25rem 2.5rem; /* 20px 40px */
+  gap: 1.25rem 2.5rem;
   width: 100%;
-  max-width: 50rem; /* 800px */
+  max-width: 50rem;
 }
 
 .formGroup {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* 8px */
+  gap: 0.5rem;
 }
 
 .formLabel {
@@ -350,9 +361,9 @@ line-height: normal;
 .formInput {
   background-color: #4a4f5b;
   border-radius: 0.9375rem;
-  border: 2px solid #222;
+  border: 0.125rem solid #222;
   background: rgba(255, 255, 255, 0.62);
-  padding: 0.75rem 0.9375rem; /* 12px 15px */
+  padding: 0.75rem 0.9375rem;
   color: #000;
   font-family: Inter;
   font-size: 1.25rem;
@@ -369,26 +380,21 @@ line-height: normal;
 }
 
 .textArea {
-  width: 48rem; /* A largura específica que você pediu */
-  height: 3.5625rem; /* A altura específica que você pediu */
-  flex-shrink: 0; /* Impede que ele encolha */
-  resize: none; /* Impede o redimensionamento pelo usuário, já que você definiu height fixo */
-
-  /* Para centralizar o textarea dentro do espaço que .fullWidth ocupa */
+  width: 48rem;
+  height: 3.5625rem;
+  flex-shrink: 0;
+  resize: none;
   margin-left: auto;
   margin-right: auto;
-  display: block; /* Garante que margin auto funcione */
+  display: block;
 }
 
 .fullWidth {
   grid-column: 1 / -1;
-  /* <<-- MUDANÇA AQUI: align-items: flex-start; para alinhar o label à esquerda -->> */
   display: flex;
-  flex-direction: column; /* Para manter o label e o textarea em coluna */
-  align-items: flex-start; 
-  
+  flex-direction: column;
+  align-items: flex-start;
 }
-
 
 .solicitarAjusteButton {
   display: flex;
@@ -401,8 +407,8 @@ line-height: normal;
   gap: 0.625rem;
   flex-shrink: 0;
   border-radius: 3.125rem 0.625rem;
-  border: 3px solid #FFF;
-  background: #B2EB00;
+  border: 0.1875rem solid #fff;
+  background: #b2eb00;
   color: #040301;
   font-family: "Open Sans";
   font-size: 1.25rem;
@@ -411,48 +417,129 @@ line-height: normal;
   line-height: normal;
 }
 
-/* Media Queries para responsividade (CONVERTIDOS PARA REM) */
+.localizacaoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 62.75rem;
+  height: 22.125rem;
+  flex-shrink: 0;
+  max-width: 80rem;
+  min-height: 18.75rem;
+  padding: 1.875rem;
+  background-color: rgba(217, 217, 217, 0.15);
+  border: 0.0625rem solid #fff;
+  margin-top: 2rem;
+  margin-bottom: 3.125rem;
+  box-shadow: -2.5rem 2.5rem 3.125rem 0.1875rem rgba(0, 0, 0, 0.25);
+  gap: 1.875rem;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.localizacaoDetalhes {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: #fff;
+  font-size: 1.125rem;
+  gap: 1rem;
+  text-align: left;
+}
+
+.localizacaoDetalhes p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.local {
+  margin-left: 1.875rem !important;
+  font-weight: normal;
+}
+
+.localizacaoIcone {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+
+.mapaContainer {
+  width: 25rem;
+  height: 15.625rem;
+  flex-shrink: 0;
+  border: 0.0625rem solid #fff;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapaImagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mensagemCorrecao{
+width: 32.625rem;
+height: 9.5625rem;
+flex-shrink: 0;
+color: #FFF;
+margin-top: 7rem;
+text-align: center;
+font-family: "Open Sans";
+font-size: 2.1875rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
 @media (max-width: 48rem) {
-  /* 768px */
   .topo {
     flex-direction: column;
-    gap: 0.9375rem; /* 15px */
-    padding: 0.9375rem; /* 15px */
+    gap: 0.9375rem;
+    padding: 0.9375rem;
   }
 
   .perfil {
-    flex-direction: column; /* Empilha a foto e o texto verticalmente em telas pequenas */
-    text-align: center; /* Centraliza o texto */
-    width: 90%; /* Ajusta a largura para ser mais responsiva */
-    /* Remove a margem automática aqui, pois o align-items no .conteudo já centraliza */
-    margin-left: auto; /* Volta para auto para centralizar em telas menores se o .conteudo não estiver 100% de largura */
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem;
   }
 
   .foto {
-    margin-right: 0; /* Remove a margem direita da foto */
-    margin-bottom: 0.9375rem; /* 15px de espaço abaixo da foto */
+    margin-right: 0;
+    margin-bottom: 0.9375rem;
   }
 
   .dados {
-    align-items: center; /* Centraliza os itens dentro de .dados em telas pequenas */
-    text-align: center; /* Centraliza o texto dentro de .dados */
+    align-items: center;
+    text-align: center;
   }
 
   .dados p:last-of-type {
-    flex-direction: column; /* Empilha as datas em telas pequenas */
-    gap: 0.5rem; /* Ajusta o espaçamento */
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
-
   .registro {
-    width: 90%; /* Ajuste a largura para ser mais responsivo */
-    padding: 1.25rem; /* 20px */
+    width: 90%;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
   }
 
   .horarioDisplay .horas,
   .horarioDisplay .minutos {
-    font-size: 3em; /* Reduz o tamanho da fonte em telas menores */
+    font-size: 3em;
   }
 
   .horarioDisplay .h,
@@ -461,34 +548,62 @@ line-height: normal;
   }
 
   .botoesGrid {
-    grid-template-columns: 1fr; /* Em telas menores, os botões ficam em uma única coluna */
-    gap: 0.9375rem; /* 15px */
+    grid-template-columns: 1fr;
+    gap: 0.9375rem;
+    max-width: 100%;
+  }
+
+  .registroButton {
+    width: 100%;
+    height: auto;
+    padding: 0.9375rem;
+    border-radius: 0.5rem;
   }
 
   .formGrid {
     grid-template-columns: 1fr;
-    gap: 1.25rem; /* 20px */
+    gap: 1.25rem;
   }
 
-  /* <<-- AJUSTES NA MEDIA QUERY PARA O CAMPO MOTIVO DE AJUSTE -->> */
   .textArea {
-    width: 100%; /* Ocupa 100% da largura do contêiner disponível */
-    height: 6.25rem; /* Altura mais usável em telas pequenas (100px) */
-    resize: vertical; /* Permite redimensionar verticalmente em telas pequenas */
-    margin-left: 0; /* Remove a centralização fixa */
+    width: 100%;
+    height: 6.25rem;
+    resize: vertical;
+    margin-left: 0;
     margin-right: 0;
   }
 
   .fullWidth {
-    align-items: flex-start; /* Continua alinhado à esquerda em telas pequenas */
+    align-items: flex-start;
+  }
+
+  .localizacaoBox {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+
+  .localizacaoDetalhes {
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    gap: 0.75rem;
+  }
+
+  .mapaContainer {
+    width: 100%;
+    height: 12.5rem;
   }
 }
 
-/* <<-- NOVA MEDIA QUERY PARA APLICAR AS DIMENSÕES FIXAS APENAS EM TELAS MAIORES -->> */
-@media (min-width: 48.0625rem) { /* A partir de 769px (48rem + 1px) */
+@media (min-width: 48.0625rem) {
   .textArea {
-    width: 48rem; /* Largura fixa para telas grandes */
-    height: 3.5625rem; /* Altura fixa para telas grandes */
-    resize: none; /* Não permite redimensionar em telas grandes */
+    width: 48rem;
+    height: 3.5625rem;
+    resize: none;
   }
 }

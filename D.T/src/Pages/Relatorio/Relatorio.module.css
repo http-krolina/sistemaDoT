@@ -13,10 +13,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
+   width: 100%;
+  height: 5rem;
 }
 
 .logo {
-  height: 60px;
+  height: 8.25rem;
 }
 
 .menuInicial {
@@ -56,25 +58,20 @@
 }
 
 .menuButtonPrincipal {
-  padding: 10px 30px; /* Aumentei o padding horizontal */
+  padding: 10px 30px; 
   background-color: #f0f0f0;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s;
-  min-width: 150px; /* Largura mínima para uniformidade */
+  min-width: 150px; 
   text-align: center;
-
-  text-decoration: none; /* Remove sublinhado */
+  text-decoration: none; 
   display: inline-block;
-
   border-radius: 10px;
-
   border: 3px solid #b2eb00;
-
   background: #fff;
-
   color: #000;
   font-size: 1rem;
   font-weight: bold;
@@ -91,7 +88,6 @@
   width: 509px;
   height: 127px;
   flex-shrink: 0;
-
   padding: 6rem 6rem;
 }
 

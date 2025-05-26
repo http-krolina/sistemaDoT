@@ -1,4 +1,4 @@
-/* Estilos para o NOVO BLOCO: Cartão de Ponto e Tabela */
+
 .blocoCartaoPonto {
   background-color: #ffffff;
   color: #333333;
@@ -11,7 +11,7 @@
   margin-top: 10rem;
 }
 
-/* Estilos para a Tabela de Ponto Detalhada (Card de Ponto) */
+
 .cardPontoDetalhes {
   background-color: #f8f8f8;
   padding: 0.9375rem;
@@ -36,7 +36,7 @@
   text-align: center;
   font-weight: bold;
   font-size: 1.1rem;
-  color: #000; /* Alterado para #000 */
+  color: #000; 
   margin-bottom: 0.625rem;
   position: relative;
   padding-bottom: 0.3125rem;
@@ -65,16 +65,15 @@
 }
 
 .tabelaPontoContainer {
-  overflow-x: auto; /* Permite scroll horizontal se a tabela for muito larga */
+  overflow-x: auto; 
   max-width: 100%;
-  /* REMOVIDO: max-height e overflow-y para que o scroll seja na página principal */
 }
 
 .tabelaPontoContainer table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.8rem;
-  min-width: 50rem; /* Garante uma largura mínima para a tabela, que pode causar scroll horizontal */
+  min-width: 50rem; 
 }
 
 .tabelaPontoContainer th,
@@ -82,19 +81,18 @@
   border: 0.0625rem solid #cccccc;
   padding: 0.375rem;
   text-align: left;
-  white-space: nowrap; /* Impede que o texto quebre linhas */
+  white-space: nowrap; 
   color: #333333;
 }
 
 .tabelaPontoContainer th {
   background-color: #f1f1f1;
   text-align: center;
-  color: #000; /* Alterado para #000 */
-  /* REMOVIDO: position: sticky e top: 0; para que o cabeçalho não fique fixo com o scroll da página */
+  color: #000; 
 }
 
-/* Media Queries para responsividade da tabela detalhada (seções específicas) */
-@media (max-width: 48rem) { /* 768px */
+
+@media (max-width: 48rem) { 
   .blocoCartaoPonto {
     padding: 0.9375rem;
   }
@@ -105,6 +103,6 @@
   }
 
   .tabelaPontoContainer table {
-    min-width: 30rem; /* Ajuste para mobile, ainda permitindo scroll horizontal se necessário */
+    min-width: 30rem; 
   }
 }

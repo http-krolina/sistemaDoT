@@ -50,7 +50,7 @@ const Relatorio = () => {
         <TabelaMes />
       </div>
 
-      {/* Adicione o novo componente aqui, abaixo de TabelaMes */}
+      
       <TabelaPontoDetalhada />
 
       <Footer />
