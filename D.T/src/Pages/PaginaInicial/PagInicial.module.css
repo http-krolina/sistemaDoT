@@ -22,7 +22,7 @@
 }
 
 .logo {
-  height: 1.875rem; /* 30px */
+  height: 60px; /* 30px */
 }
 
 .menuInicial {
@@ -31,9 +31,10 @@
   align-items: center; /* Centraliza verticalmente (opcional) */
   gap: 0.625rem; /* 10px */
   width: 100%; /* Ocupa toda a largura disponível */
-  margin: 0 auto;
-}
 
+  margin-left: -20rem;
+  margin-right: 2rem;
+}
 
 .mensagemCorrecao {
   font-size: 1.1rem;
@@ -42,7 +43,6 @@
   margin-bottom: 25px; /* Espaço abaixo da mensagem e antes do formulário */
   line-height: 1.5; /* Melhora a legibilidade */
 }
-
 
 .menuButtonDesativado {
   padding: 0.625rem 1.875rem; /* 10px 30px */
@@ -114,18 +114,18 @@
 }
 
 .perfil {
-  display: flex; /* Torna-o um container flex */
-  flex-direction: row; /* Alinha os itens em linha (foto à esquerda, dados à direita) */
-  align-items: center; /* Centraliza os itens (foto e dados) verticalmente */
-  justify-content: flex-start; /* Alinha os itens ao início do container */
-  padding: 1.25rem 1.875rem; /* 20px top/bottom, 30px left/right para padding interno */
-  width: 100%; /* Ocupa a largura total do seu container pai (.conteudo) */
-  max-width: 80rem; /* Defina uma largura máxima razoável para centralizar (ajuste conforme necessário) */
-  height: auto; /* Ajusta a altura automaticamente com o conteúdo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 1905px;
+  height: 294px;
+  margin-left: -1px;
+
   background-color: #171717;
-  margin-bottom: 1.875rem; /* 30px */
-  margin-left: auto; /* Centraliza o bloco .perfil horizontalmente */
-  margin-right: auto; /* Centraliza o bloco .perfil horizontalmente */
+
+  margin-bottom: 30px;
+  align-items: center;
 }
 
 .foto {
@@ -150,7 +150,7 @@
 
 .dados h2 {
   color: #ffffff;
-  font-size: 2.5rem; /* Tamanho da fonte para o nome */
+  font-size: 1.5rem; /* Tamanho da fonte para o nome */
   font-weight: bold;
   margin-bottom: 0.5rem; /* Pequeno espaço abaixo do nome */
   white-space: nowrap; /* Impede que o nome quebre em várias linhas se for muito longo */
@@ -173,11 +173,10 @@
   margin-bottom: 0;
 }
 
-
 .registro {
   width: 62.75rem;
   height: 37.1875rem;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: -40px 40px 50px 3px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(35px);
@@ -191,6 +190,7 @@
 }
 
 .registroTitulo {
+  display: block;
   color: #171717;
   margin-top: 1rem;
   text-align: center;
@@ -199,6 +199,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  text-decoration: none; /* Remove sublinhado */
 }
 
 .horarioDisplay {
@@ -212,60 +214,57 @@
 .horarioDisplay .horas {
   font-size: 8rem;
   line-height: 1;
-  color: #FFF;
-text-align: center;
-font-family: "Open Sans";
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .horarioDisplay .h {
-  color: #FFF;
-font-family: "Open Sans";
-font-size: 4rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .horarioDisplay .minutos {
-  color: #FFF;
+  color: #fff;
 
-text-align: center;
-font-family: "Open Sans";
-font-size: 8rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .horarioDisplay .min {
-  color: #FFF;
-font-family: "Open Sans";
-font-size: 3rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-
-
 
 .dataDisplay {
   width: 33.875rem;
-height: 2.9375rem;
-flex-shrink: 0;
-color: #FFF;
-text-align: center;
-font-family: "Open Sans";
-font-size: 1.5625rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  height: 2.9375rem;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .iconeData {
-  
 }
 
 .botoesGrid {
@@ -385,10 +384,8 @@ line-height: normal;
   /* <<-- MUDANÇA AQUI: align-items: flex-start; para alinhar o label à esquerda -->> */
   display: flex;
   flex-direction: column; /* Para manter o label e o textarea em coluna */
-  align-items: flex-start; 
-  
+  align-items: flex-start;
 }
-
 
 .solicitarAjusteButton {
   display: flex;
@@ -401,8 +398,8 @@ line-height: normal;
   gap: 0.625rem;
   flex-shrink: 0;
   border-radius: 3.125rem 0.625rem;
-  border: 3px solid #FFF;
-  background: #B2EB00;
+  border: 3px solid #fff;
+  background: #b2eb00;
   color: #040301;
   font-family: "Open Sans";
   font-size: 1.25rem;
@@ -444,7 +441,6 @@ line-height: normal;
     gap: 0.5rem; /* Ajusta o espaçamento */
   }
 
-
   .registro {
     width: 90%; /* Ajuste a largura para ser mais responsivo */
     padding: 1.25rem; /* 20px */
@@ -485,7 +481,8 @@ line-height: normal;
 }
 
 /* <<-- NOVA MEDIA QUERY PARA APLICAR AS DIMENSÕES FIXAS APENAS EM TELAS MAIORES -->> */
-@media (min-width: 48.0625rem) { /* A partir de 769px (48rem + 1px) */
+@media (min-width: 48.0625rem) {
+  /* A partir de 769px (48rem + 1px) */
   .textArea {
     width: 48rem; /* Largura fixa para telas grandes */
     height: 3.5625rem; /* Altura fixa para telas grandes */

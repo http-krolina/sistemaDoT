@@ -1,11 +1,12 @@
 // src/components/PasswordRecovery/Step1.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./ConfSenha.module.css";
+import styles from "./ConfirmarSenha.module.css";
 
-function Step1() {
-  const [cpf, setCpf] = useState("");
-  const [matricula, setMatricula] = useState("");
+function ConfirmarSenha() {
+  const [senha, setSenha] = useState("");
+  const [senhaConfirmacao, setSenhaConfirmacao] = useState("");
+
   const navigate = useNavigate();
 
   const togglePassword = (id) => {
@@ -16,13 +17,11 @@ function Step1() {
   };
 
   const handleCancel = () => {
-    navigate(""); 
+    navigate("/");
   };
 
   const handleRecover = () => {
-    
-
-    navigate(""); 
+    navigate("/pagina-inicial");
   };
 
   return (
@@ -39,14 +38,14 @@ function Step1() {
             placeholder="Digite sua senha"
             className={styles.inputstyle}
             type="password"
-            id="Senha"
-            value={Senha}
-            onChange={(e) => setCpf(e.target.value)}
+            id="senha"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
           />
           <img
             className={styles.olho}
             src="https://cdn-icons-png.flaticon.com/512/709/709612.png"
-            onClick={() => togglePassword("cpf")}
+            onClick={() => togglePassword("senha")}
             alt="Mostrar senha"
           />
         </div>
@@ -60,14 +59,14 @@ function Step1() {
             placeholder="Digite novamente sua senha"
             className={styles.inputstyle}
             type="password"
-            id="Senha"
-            value={SenhaConfirmação}
-            onChange={(e) => setMatricula(e.target.value)}
+            id="senhaConfirmacao"
+            value={senhaConfirmacao}
+            onChange={(e) => setSenhaConfirmacao(e.target.value)}
           />
           <img
             className={styles.olho}
             src="https://cdn-icons-png.flaticon.com/512/709/709612.png"
-            onClick={() => togglePassword("matricula")}
+            onClick={() => togglePassword("senhaConfirmacao")}
             alt="Mostrar senha"
           />
         </div>
@@ -91,4 +90,4 @@ function Step1() {
   );
 }
 
-export default Step1;
+export default ConfirmarSenha;

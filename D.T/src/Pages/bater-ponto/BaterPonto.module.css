@@ -163,11 +163,10 @@
   margin-bottom: 0;
 }
 
-
 .registro {
   width: 62.75rem;
   height: 37.1875rem;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: -40px 40px 50px 3px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(35px);
@@ -181,6 +180,7 @@
 }
 
 .registroTitulo {
+  display: flex;
   color: #171717;
   margin-top: 1rem;
   text-align: center;
@@ -202,60 +202,57 @@
 .horarioDisplay .horas {
   font-size: 8rem;
   line-height: 1;
-  color: #FFF;
-text-align: center;
-font-family: "Open Sans";
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .horarioDisplay .h {
-  color: #FFF;
-font-family: "Open Sans";
-font-size: 4rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .horarioDisplay .minutos {
-  color: #FFF;
+  color: #fff;
 
-text-align: center;
-font-family: "Open Sans";
-font-size: 8rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .horarioDisplay .min {
-  color: #FFF;
-font-family: "Open Sans";
-font-size: 3rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-
-
 
 .dataDisplay {
   width: 33.875rem;
-height: 2.9375rem;
-flex-shrink: 0;
-color: #FFF;
-text-align: center;
-font-family: "Open Sans";
-font-size: 1.5625rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  height: 2.9375rem;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .iconeData {
-  
 }
 
 .botoesGrid {
@@ -375,10 +372,8 @@ line-height: normal;
   /* <<-- MUDANÇA AQUI: align-items: flex-start; para alinhar o label à esquerda -->> */
   display: flex;
   flex-direction: column; /* Para manter o label e o textarea em coluna */
-  align-items: flex-start; 
-  
+  align-items: flex-start;
 }
-
 
 .solicitarAjusteButton {
   display: flex;
@@ -391,8 +386,8 @@ line-height: normal;
   gap: 0.625rem;
   flex-shrink: 0;
   border-radius: 3.125rem 0.625rem;
-  border: 3px solid #FFF;
-  background: #B2EB00;
+  border: 3px solid #fff;
+  background: #b2eb00;
   color: #040301;
   font-family: "Open Sans";
   font-size: 1.25rem;
@@ -434,7 +429,6 @@ line-height: normal;
     gap: 0.5rem; /* Ajusta o espaçamento */
   }
 
-
   .registro {
     width: 90%; /* Ajuste a largura para ser mais responsivo */
     padding: 1.25rem; /* 20px */
@@ -475,7 +469,8 @@ line-height: normal;
 }
 
 /* <<-- NOVA MEDIA QUERY PARA APLICAR AS DIMENSÕES FIXAS APENAS EM TELAS MAIORES -->> */
-@media (min-width: 48.0625rem) { /* A partir de 769px (48rem + 1px) */
+@media (min-width: 48.0625rem) {
+  /* A partir de 769px (48rem + 1px) */
   .textArea {
     width: 48rem; /* Largura fixa para telas grandes */
     height: 3.5625rem; /* Altura fixa para telas grandes */

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./RecSenha.module.css";
 
-function Step1() {
+function RecSenha() {
   const [cpf, setCpf] = useState("");
   const [matricula, setMatricula] = useState("");
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ function Step1() {
     // Adicione aqui qualquer lógica de validação necessária para CPF e Matrícula
     if (cpf && matricula) {
       // Exemplo de validação simples
-      navigate("../Confirmar Senha/ConfSenha.jsx"); // Use o caminho de rota definido!
+      navigate("./Confirmar-Senha"); // Use o caminho de rota definido!
     } else {
       alert("Por favor, preencha o CPF e a Matrícula.");
     }
@@ -84,4 +84,4 @@ function Step1() {
   );
 }
 
-export default Step1;
+export default RecSenha;
